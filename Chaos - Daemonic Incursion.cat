@@ -1,219 +1,328 @@
-<?xml version="1.0" encoding="utf-8"?>
-<catalogue
-    id="b2e4c6d3-0000-4000-8000-000000000001"
-    name="Chaos - Daemonic Incursion"
-    revision="1"
-    battleScribeVersion="2.02"
-    authorName="Black Crusade / Omnihammer project"
-    authorContact=""
-    authorUrl="https://github.com/jcklemme/Omnihammer"
-    library="false"
-    gameSystemId="a1f3b5c2-0000-4000-8000-000000000001"
-    gameSystemRevision="1"
-    xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b2e4c6d3-0000-4000-8000-000000000001" name="Chaos - Daemonic Incursion" revision="1" battleScribeVersion="2.00" authorName="Black Crusade / Omnihammer project" gameSystemId="a1f3b5c2-0000-4000-8000-000000000001" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profiles/>
+  <rules/>
+  <infoLinks/>
+  <costTypes/>
+  <profileTypes/>
   <forceEntries>
     <forceEntry id="b2e4c6d3-0000-4000-8000-000000000010" name="Daemonic Incursion Detachment" hidden="false">
-      <categoryLinks>
-        <categoryLink id="efa3c88c-5db5-4d50-b51e-b8b3391d47a8" name="HQ" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000020" primary="false">
+      <profiles/>
+      <rules>
+      <rule id="b2e4c6d3-0000-4000-8000-000000000020" name="Daemon of Khorne" hidden="false">
+        <profiles/>
+        <rules/>
+        <infoLinks/>
+        <modifiers/>
+        <description>A model with this rule is a Daemonic entity of the Blood God. They possess the following Universal Special Rules: Daemon, Furious Charge, Rage, Fleet, Adamantium Will. The Blood God&apos;s Due: In the Assault Phase, if a unit entirely composed of Daemon of Khorne models wipes out an enemy unit and performs an Overrun! consolidation, add +1&quot; to the result. If the die roll is a 1, the unit immediately suffers D3 automatic hits at the unit&apos;s majority S and AP.</description>
+      </rule>
+      <rule id="b2e4c6d3-0000-4000-8000-000000000022" name="Daemonic Incursion Benefit" hidden="false">
+        <profiles/>
+        <rules/>
+        <infoLinks/>
+        <modifiers/>
+        <description>Unlike Daemons taken as reserves in other detachments, units in this detachment are not required to use the Daemonic Summoning rule and may deploy normally or use standard Reserves.</description>
+      </rule>
+      <rule id="b2e4c6d3-0000-4000-8000-000000000021" name="The Warp Bleeds Through (PLACEHOLDER)" hidden="false">
+        <profiles/>
+        <rules/>
+        <infoLinks/>
+        <modifiers/>
+        <description>[v0.2 PLACEHOLDER] This will be the Daemonic Incursion faction mechanic combining Warp Tide, Daemonic Resurgence, and Warp Rift Zones. Design work is in progress in the main Omnihammer repo; this placeholder should be replaced when the final mechanic lands.</description>
+      </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000028" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000020" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a69adfa-248b-4d1f-8890-24e9735525f2" type="min"/>
-            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c19a9a93-fd53-404c-9786-feef0e20fedd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink id="6320cf34-40ad-4ffa-9e0c-54d476cb98c9" name="Troops" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000021" primary="false">
+        </categoryEntry>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000021" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af60612b-4ce8-408a-84c9-d2a6e1572919" type="min"/>
-            <constraint field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faa5dbf6-96e4-4622-b599-b4959aa05e8f" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink id="0e22dcd4-6036-4ef8-8615-0f1d200493a6" name="Elites" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000022" primary="false">
+        </categoryEntry>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000022" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b3f7238-c611-4d2b-a723-4c1de46d5545" type="min"/>
-            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee00c2e-9221-4e58-a9d7-718457f555d7" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink id="61963c23-5cb8-45d4-8a85-7421dc43cfa2" name="Fast Attack" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000023" primary="false">
+        </categoryEntry>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000023" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26a15fec-38b4-4e19-9012-9a7266eb64cb" type="min"/>
-            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="044b0723-5c93-4a9d-a630-8487b6d9899a" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink id="5e0a9d8b-e11d-4884-8dc6-8dc780f3a782" name="Heavy Support" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000024" primary="false">
+        </categoryEntry>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000024" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0062d3f-9109-4726-96b9-a5aef32a994b" type="min"/>
-            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c3ed212-fcc5-4f5d-900c-3ae395e38cfb" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink id="902718bf-b8fb-4d11-8cd7-58c765d4c880" name="Lord of War" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000025" primary="false">
+        </categoryEntry>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000025" name="Lord of War" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18fe1f07-ca21-4205-8464-2ef8be317a57" type="min"/>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65f5e619-4ff4-4669-b421-28dc2feebcab" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
-        </categoryLink>
-        <categoryLink id="862eada2-d21b-4f89-a8ba-0225af7fb123" name="Fortifications" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000026" primary="false">
+        </categoryEntry>
+        <categoryEntry id="a1f3b5c2-0000-4000-8000-000000000026" name="Fortifications" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd6c9bd3-ceef-4c16-ba87-2d8d670c6647" type="min"/>
-            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="709608e7-60a0-483d-a205-cd23daa301c6" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink id="904ff7d7-bdba-40fd-930c-ea61c73827ad" name="Daemonic Incursion Benefit" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000022" type="rule"/>
-        <infoLink id="41ae42f3-c5a3-4028-9e68-7a16c3a560e8" name="The Warp Bleeds Through" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000021" type="rule"/>
-      </infoLinks>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
     </forceEntry>
   </forceEntries>
-  <sharedSelectionEntries>
-    <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000040" name="Bloodletters" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntryGroups>
-      <selectionEntryGroup id="b2e4c6d3-0000-4000-8000-000000000043" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="b2e4c6d3-0000-4000-8000-000000000044">
-        <constraints>
-          <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aaabd36-75d1-4c97-ac68-ea3bca2458e8" type="min"/>
-          <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="019472c9-fcab-42df-87b6-644aacbfc6d3" type="max"/>
-        </constraints>
-        <selectionEntries>
-        <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000044" name="Bloodletter" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d96d9e-1376-408c-a610-90163b0c44bf" type="min"/>
-            <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4e641bc-063c-4158-bc11-c49d1b238e86" type="max"/>
-          </constraints>
-          <profiles>
-        <profile id="b2e4c6d3-0000-4000-8000-000000000041" name="Bloodletter" hidden="false" profileTypeId="a1f3b5c2-0000-4000-8000-000000000010">
+  <selectionEntries>
+    <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000040" name="Bloodletters" hidden="false" collective="false" categoryEntryId="a1f3b5c2-0000-4000-8000-000000000021" type="unit">
+      <profiles>
+        <profile id="b2e4c6d3-0000-4000-8000-000000000041" name="Bloodletters" hidden="false" profileTypeId="a1f3b5c2-0000-4000-8000-000000000010">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <characteristics>
-            <characteristic name="Unit Type" characteristicId="a1f3b5c2-0000-4000-8000-000000000100" value="Infantry"/>
-            <characteristic name="WS" characteristicId="a1f3b5c2-0000-4000-8000-000000000101" value="5"/>
-            <characteristic name="BS" characteristicId="a1f3b5c2-0000-4000-8000-000000000102" value="0"/>
-            <characteristic name="S" characteristicId="a1f3b5c2-0000-4000-8000-000000000103" value="4"/>
-            <characteristic name="T" characteristicId="a1f3b5c2-0000-4000-8000-000000000104" value="4"/>
-            <characteristic name="W" characteristicId="a1f3b5c2-0000-4000-8000-000000000105" value="1"/>
-            <characteristic name="I" characteristicId="a1f3b5c2-0000-4000-8000-000000000106" value="4"/>
-            <characteristic name="A" characteristicId="a1f3b5c2-0000-4000-8000-000000000107" value="1"/>
-            <characteristic name="Ld" characteristicId="a1f3b5c2-0000-4000-8000-000000000108" value="10"/>
-            <characteristic name="Sv" characteristicId="a1f3b5c2-0000-4000-8000-000000000109" value="-"/>
-            <characteristic name="Inv" characteristicId="a1f3b5c2-0000-4000-8000-00000000010a" value="5++"/>
+            <characteristic name="Unit Type" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000100" value="Infantry"/>
+            <characteristic name="WS" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000101" value="5"/>
+            <characteristic name="BS" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000102" value="0"/>
+            <characteristic name="S" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000103" value="4"/>
+            <characteristic name="T" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000104" value="4"/>
+            <characteristic name="W" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000105" value="1"/>
+            <characteristic name="I" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000106" value="4"/>
+            <characteristic name="A" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000107" value="1"/>
+            <characteristic name="Ld" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000108" value="10"/>
+            <characteristic name="Sv" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000109" value="-"/>
+            <characteristic name="Inv" characteristicTypeId="a1f3b5c2-0000-4000-8000-00000000010a" value="5++"/>
           </characteristics>
         </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="211cbd83-71e0-4994-8f23-a63489c686b5" name="Daemon of Khorne" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000020" type="rule"/>
-            <infoLink id="715310e7-1b72-4cc4-a2d4-af993e4fc171" name="Daemonic Summoning" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000046" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-          <selectionEntry id="09da3c86-94f4-4b6a-9a92-e468c735d4ed" name="Hellblade" hidden="false" collective="false" import="true" type="upgrade">
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="c6fb310f-6457-42da-9c74-2ee1e466ff67" name="Daemon of Khorne" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000020" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c43f5fab-398b-4b8b-9011-a744ad2dddaa" name="Daemon" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000040" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="825c7451-0c3d-47de-9bd4-7c36739422df" name="Furious Charge" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000042" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1f5c5313-c574-49a2-a894-913b3feba841" name="Rage" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000043" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5aad5aae-7695-41ae-b14c-ab8f9cc7ec67" name="Fleet" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000044" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f905a78b-d6a7-4b12-85d0-9fe6270cc389" name="Adamantium Will" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000045" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="021ac8e8-5201-4ce7-b1d7-f918869ca6e6" name="Daemonic Summoning" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000046" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+          <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000044" name="Bloodletter" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+            <profiles/>
+            <rules/>
+            <infoLinks/>
+            <modifiers/>
             <constraints>
-              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b4c4a22-81f5-4cae-9ec0-040f8cc18f8c" type="min"/>
-              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851ad03b-d7f9-47a1-9211-e831ccd7517a" type="max"/>
+              <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+              <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
             </constraints>
-            <infoLinks>
-              <infoLink id="cf168073-64be-40a5-b9a4-913e52d1d8b4" name="Hellblade" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000030" type="profile"/>
-            </infoLinks>
+            <selectionEntries/>
+            <selectionEntryGroups/>
+            <entryLinks/>
             <costs>
-              <cost name="pts" typeId="a1f3b5c2-0000-4000-8000-000000000003" value="0.0"/>
+              <cost name="pts" costTypeId="points" value="10.0"/>
             </costs>
           </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="a1f3b5c2-0000-4000-8000-000000000003" value="27.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000045" name="Bloodreaper" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6b6a0be-db33-4ee3-a744-900ad3428f93" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cef5ed4-9efd-4f71-904d-67d6526f0265" type="max"/>
-          </constraints>
-          <profiles>
-        <profile id="b2e4c6d3-0000-4000-8000-000000000042" name="Bloodreaper" hidden="false" profileTypeId="a1f3b5c2-0000-4000-8000-000000000010">
-          <characteristics>
-            <characteristic name="Unit Type" characteristicId="a1f3b5c2-0000-4000-8000-000000000100" value="Infantry (Character)"/>
-            <characteristic name="WS" characteristicId="a1f3b5c2-0000-4000-8000-000000000101" value="5"/>
-            <characteristic name="BS" characteristicId="a1f3b5c2-0000-4000-8000-000000000102" value="0"/>
-            <characteristic name="S" characteristicId="a1f3b5c2-0000-4000-8000-000000000103" value="4"/>
-            <characteristic name="T" characteristicId="a1f3b5c2-0000-4000-8000-000000000104" value="4"/>
-            <characteristic name="W" characteristicId="a1f3b5c2-0000-4000-8000-000000000105" value="1"/>
-            <characteristic name="I" characteristicId="a1f3b5c2-0000-4000-8000-000000000106" value="4"/>
-            <characteristic name="A" characteristicId="a1f3b5c2-0000-4000-8000-000000000107" value="2"/>
-            <characteristic name="Ld" characteristicId="a1f3b5c2-0000-4000-8000-000000000108" value="10"/>
-            <characteristic name="Sv" characteristicId="a1f3b5c2-0000-4000-8000-000000000109" value="-"/>
-            <characteristic name="Inv" characteristicId="a1f3b5c2-0000-4000-8000-00000000010a" value="5++"/>
-          </characteristics>
-        </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="333c6c9b-7b06-4a68-8657-339ebf2a097f" name="Character" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000029" primary="false"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink id="83334f27-52e0-4070-aa4a-1840a9c556f1" name="Daemon of Khorne" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000020" type="rule"/>
-            <infoLink id="c4661ba7-e292-4c58-bc2e-bed0af49e6f8" name="Daemonic Summoning" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000046" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-          <selectionEntry id="f22485a7-05b9-46ca-b3cd-230032275589" name="Hellblade" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000045" name="Upgrade one Bloodletter to Bloodreaper" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <profiles>
+              <profile id="b2e4c6d3-0000-4000-8000-000000000042" name="Bloodreaper" hidden="false" profileTypeId="a1f3b5c2-0000-4000-8000-000000000010">
+                      <profiles/>
+                <rules/>
+                <infoLinks/>
+                <modifiers/>
+                      <characteristics>
+                  <characteristic name="Unit Type" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000100" value="Infantry (Character)"/>
+                  <characteristic name="WS" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000101" value="5"/>
+                  <characteristic name="BS" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000102" value="0"/>
+                  <characteristic name="S" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000103" value="4"/>
+                  <characteristic name="T" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000104" value="4"/>
+                  <characteristic name="W" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000105" value="1"/>
+                  <characteristic name="I" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000106" value="4"/>
+                  <characteristic name="A" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000107" value="2"/>
+                  <characteristic name="Ld" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000108" value="10"/>
+                  <characteristic name="Sv" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000109" value="-"/>
+                  <characteristic name="Inv" characteristicTypeId="a1f3b5c2-0000-4000-8000-00000000010a" value="5++"/>
+                </characteristics>
+              </profile>
+            </profiles>
+            <rules/>
+            <infoLinks/>
+            <modifiers/>
             <constraints>
-              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="909635db-3a74-4a94-af24-ff8303d08c03" type="min"/>
-              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08239e93-92cf-4db3-935b-b57fbcdf5149" type="max"/>
+              <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
             </constraints>
-            <infoLinks>
-              <infoLink id="2f8c9e6c-6719-41e8-b875-6d7ded1fc7fd" name="Hellblade" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000030" type="profile"/>
-            </infoLinks>
+            <selectionEntries/>
+            <selectionEntryGroups/>
+            <entryLinks/>
             <costs>
-              <cost name="pts" typeId="a1f3b5c2-0000-4000-8000-000000000003" value="0.0"/>
+              <cost name="pts" costTypeId="points" value="0.0"/>
             </costs>
           </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="a1f3b5c2-0000-4000-8000-000000000003" value="27.0"/>
-          </costs>
-        </selectionEntry>
-        </selectionEntries>
-      </selectionEntryGroup>
-      <selectionEntryGroup id="784439b0-64be-4fe3-9dfe-bc1c6bb7e800" name="Options" hidden="false" collective="false" import="true">
-        <selectionEntries>
-        <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000047" name="Instrument of Chaos" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1497bf43-3b1f-4034-9a12-f1c252b4dea3" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce26b45c-bb0d-4848-8c4f-daa621afccd4" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="a1f3b5c2-0000-4000-8000-000000000003" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000048" name="Daemonic Icon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e632a921-5193-4810-9c65-f8f729718dce" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b78911-7d4e-4fb3-8090-911236f016e9" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="a1f3b5c2-0000-4000-8000-000000000003" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        </selectionEntries>
-      </selectionEntryGroup>
-      </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink id="f1ae89da-210b-4a9e-9607-45dacfceaf4b" name="Troops" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000021" primary="true"/>
-      </categoryLinks>
+          <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000046" name="Hellblade" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <profiles/>
+            <rules/>
+            <infoLinks>
+              <infoLink id="5561444a-bfbd-4015-811c-75ea9c0924e9" name="Hellblade" hidden="false" targetId="b2e4c6d3-0000-4000-8000-000000000030" type="profile">
+                <profiles/>
+                <rules/>
+                      <infoLinks/>
+                <modifiers/>
+              </infoLink>
+              <infoLink id="88028630-e7e5-49f1-9f8e-2463f2642267" name="Shred" hidden="false" targetId="a1f3b5c2-0000-4000-8000-000000000047" type="rule">
+                <profiles/>
+                <rules/>
+                      <infoLinks/>
+                <modifiers/>
+              </infoLink>
+            </infoLinks>
+            <modifiers/>
+            <constraints>
+              <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+              <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            </constraints>
+            <selectionEntries/>
+            <selectionEntryGroups/>
+            <entryLinks/>
+            <costs>
+              <cost name="pts" costTypeId="points" value="0.0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000047" name="Instrument of Chaos" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <profiles/>
+            <rules/>
+            <infoLinks/>
+            <modifiers/>
+            <constraints>
+              <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            </constraints>
+            <selectionEntries/>
+            <selectionEntryGroups/>
+            <entryLinks/>
+            <costs>
+              <cost name="pts" costTypeId="points" value="0.0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="b2e4c6d3-0000-4000-8000-000000000048" name="Daemonic Icon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <profiles/>
+            <rules/>
+            <infoLinks/>
+            <modifiers/>
+            <constraints>
+              <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            </constraints>
+            <selectionEntries/>
+            <selectionEntryGroups/>
+            <entryLinks/>
+            <costs>
+              <cost name="pts" costTypeId="points" value="0.0"/>
+            </costs>
+          </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
-  </sharedSelectionEntries>
+  </selectionEntries>
+  <selectionEntryGroups/>
+  <entryLinks/>
+  <sharedSelectionEntries/>
+  <sharedSelectionEntryGroups/>
   <sharedProfiles>
     <profile id="b2e4c6d3-0000-4000-8000-000000000030" name="Hellblade" hidden="false" profileTypeId="a1f3b5c2-0000-4000-8000-000000000013">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicId="a1f3b5c2-0000-4000-8000-000000000130" value="Melee"/>
-        <characteristic name="S" characteristicId="a1f3b5c2-0000-4000-8000-000000000131" value="User"/>
-        <characteristic name="AP" characteristicId="a1f3b5c2-0000-4000-8000-000000000132" value="3"/>
-        <characteristic name="Type" characteristicId="a1f3b5c2-0000-4000-8000-000000000133" value="Melee, Shred"/>
+        <characteristic name="Range" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000130" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000131" value="User"/>
+        <characteristic name="AP" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000132" value="3"/>
+        <characteristic name="Type" characteristicTypeId="a1f3b5c2-0000-4000-8000-000000000133" value="Melee, Shred"/>
       </characteristics>
     </profile>
   </sharedProfiles>
-  <sharedRules>
-    <rule id="b2e4c6d3-0000-4000-8000-000000000020" name="Daemon of Khorne" hidden="false">
-      <description>A model with this rule is a Daemonic entity of the Blood God. They possess the following Universal Special Rules: Daemon, Furious Charge, Rage, Fleet, Adamantium Will.
-
-The Blood God&apos;s Due: In the Assault Phase, if a unit entirely composed of Daemon of Khorne models wipes out an enemy unit and performs an Overrun! consolidation, add +1&quot; to the result. If the die roll is a 1, the unit immediately suffers D3 automatic hits resolved at the unit&apos;s majority Strength and AP.</description>
-    </rule>
-    <rule id="b2e4c6d3-0000-4000-8000-000000000022" name="Daemonic Incursion Benefit" hidden="false">
-      <description>Unlike Daemons taken as reserves in other detachments, units in this detachment are not required to use the Daemonic Summoning rule and may deploy normally or use standard Reserves.</description>
-    </rule>
-    <rule id="b2e4c6d3-0000-4000-8000-000000000021" name="The Warp Bleeds Through (PLACEHOLDER)" hidden="false">
-      <description>[v0.2 PLACEHOLDER] This will be the Daemonic Incursion faction mechanic combining Warp Tide (an escalating counter), Daemonic Resurgence (unit resurrection), and Warp Rift Zones (terrain-based bonuses). Design work is in progress in the Omnihammer repo; this placeholder rule should be replaced when the final mechanic lands.</description>
-    </rule>
-  </sharedRules>
+  <sharedRules/>
+  <sharedInfoGroups/>
 </catalogue>

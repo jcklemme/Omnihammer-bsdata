@@ -10,15 +10,13 @@ This repository contains the `.gst` (game system) and `.cat` (faction catalog) f
 
 ## Using this data in NewRecruit
 
-NewRecruit is the active successor to BattleScribe and uses the same file format.
+NewRecruit is the active successor to BattleScribe and uses the same file format. **Do not use the old BattleScribe Desktop app** — it's unmaintained and can't load GitHub-hosted repos (it expects a JSON manifest that GitHub doesn't provide).
 
 1. Install **New Recruit** from the [web app](https://newrecruit.eu/app), [Google Play](https://play.google.com/store/apps/details?id=eu.newrecruit.www.twa), or the App Store.
 2. Open NewRecruit and go to **Add or Remove games** → **Add from GitHub**.
-3. Paste the URL of this repository: `https://github.com/jcklemme/Omnihammer-bsdata`
-4. NewRecruit will load OmniHammer and all available faction catalogs.
+3. Paste: `https://github.com/jcklemme/Omnihammer-bsdata`
+4. NewRecruit will download OmniHammer and available faction catalogs.
 5. Create a new roster, pick a **Daemonic Incursion Detachment**, and start building.
-
-> Old BattleScribe: Not recommended. BattleScribe's developer has been absent for years and many modern features don't work. Use NewRecruit.
 
 ---
 
