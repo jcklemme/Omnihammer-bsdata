@@ -220,6 +220,41 @@
       <modifiers/>
       <description>Re-rolls failed to-wound rolls.</description>
     </rule>
+    <rule id="a1f3b5c2-0000-4000-8000-000000000049" name="Scouts" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>May always be deployed. Before rolling to see who goes first, may take a bonus normal move. Confers scout ability to a dedicated transport it is mounted in. If both players have scouts, roll-off and alternate moving scouts starting with the winner of the roll-off. The unit also gains Outflank.</description>
+    </rule>
+    <rule id="a1f3b5c2-0000-4000-8000-00000000004a" name="Hammer of Wrath" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>On the turn this unit charges, models may perform (X) number of their normally allowed attacks at initiative 10 instead of during their normal initiative step. Value of X is specified in parentheses on each unit/weapon; if not specified, X=1.</description>
+    </rule>
+    <rule id="a1f3b5c2-0000-4000-8000-00000000004b" name="Soul Blaze" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Units wounded by this attack are set ablaze. Roll D6 at the end of each turn. On a 4+, the unit takes D3 S4 AP5 hits with no cover saves. If less than 4, the blaze goes out and the effect is removed.</description>
+    </rule>
+    <rule id="a1f3b5c2-0000-4000-8000-00000000004c" name="Ignores Cover" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Weapon negates any cover saves.</description>
+    </rule>
+    <rule id="a1f3b5c2-0000-4000-8000-00000000004d" name="Deep Strike" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Units with this rule may be held in Reserve and arrive via Deep Strike deployment. See the Core Rules Reserves and Deep Strike section for full deployment procedure, including scatter rules and mishap resolution.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles/>
 </gameSystem>
